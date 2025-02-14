@@ -57,7 +57,7 @@ Every reject message begins with the following fields. Some messages append extr
 |}
 
 The human-readable string is intended only for debugging purposes; in particular, different implementations may
-use different strings. The string should not be shown to users or used for anthing besides diagnosing
+use different strings. The string should not be shown to users or used for anything besides diagnosing
 interoperability problems.
 
 The following reject code categories are used; in the descriptions below, "server" is the peer generating
@@ -149,7 +149,7 @@ The reject message is backwards-compatible; older peers that do not recognize th
 
 == Implementation notes ==
 
-Implementors must consider what happens if an attacker either sends them
+Implementers must consider what happens if an attacker either sends them
 reject messages for valid transactions/blocks or sends them random
 reject messages, and should beware of possible denial-of-service attacks.
 For example, notifying the user of every reject message received
